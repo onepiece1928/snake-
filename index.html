@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake and Ladder Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Snake and Ladder Game</h1>
+    <div class="game-container">
+        <canvas id="gameBoard" width="600" height="600"></canvas>
+        <div class="controls">
+            <button id="rollDiceBtn">Roll Dice 🎲</button>
+            <p id="diceResult">Dice: </p>
+            <p id="turnIndicator">Player 1's Turn</p>
+        </div>
+    </div>
+    <audio id="diceSound" src="assets/dice_roll.mp3"></audio>
+    <audio id="moveSound" src="assets/player_move.mp3"></audio>
+    <audio id="snakeSound" src="assets/snake_bite.mp3" volume="1.5"></audio>
+    <audio id="ladderSound" src="assets/ladder_climb.mp3"></audio>
+    <audio id="winSound" src="assets/win_sound.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
